@@ -221,7 +221,7 @@ public class RenderPlayer extends RenderLiving {
 	}
 	
 	private static final TextureLocation lax1dude_cape = new TextureLocation("/misc/laxcape.png");
-	private static final TextureLocation megatkc_cape = new TextureLocation("/misc/laxcape.png");
+	private static final TextureLocation megatkc_cape = new TextureLocation("/misc/tkc-cape.png");
 	/**
 	 * Method for adding special render rules
 	 */
