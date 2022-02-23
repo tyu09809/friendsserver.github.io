@@ -78,5 +78,7 @@ public class GuiIngameMenu extends GuiScreen {
 		this.drawDefaultBackground();
 		this.drawCenteredString(this.fontRenderer, "Game menu", this.width / 2, 40, 16777215);
 		super.drawScreen(par1, par2, par3);
+		String client_name = "Aeon b1";
+		fontRenderer.drawStringWithShadow(client_name, 4, this.height - 10, 0xffffffff);
 	}
 }

@@ -10,6 +10,7 @@ import net.lax1dude.eaglercraft.EaglercraftRandom;
 import net.lax1dude.eaglercraft.TextureLocation;
 import net.lax1dude.eaglercraft.adapter.Tessellator;
 import net.lax1dude.eaglercraft.glemu.EffectPipeline;
+import net.megatkc.aeon.gui.*;
 
 public class GuiIngame extends Gui {
 	private static RenderItem itemRenderer = null;
@@ -441,11 +442,9 @@ public class GuiIngame extends Gui {
 			EaglerAdapter.glPopMatrix();
 			this.mc.mcProfiler.endSection();
 		}else {
-			EaglerAdapter.glPushMatrix();
-			EaglerAdapter.glScalef(0.75f, 0.75f, 0.75f);
-			var8.drawStringWithShadow(this.mc.renderGlobal.getDebugInfoShort(), 2, 2, 16777215);
-			var8.drawStringWithShadow("x: "+MathHelper.floor_double(this.mc.thePlayer.posX)+", y: "+MathHelper.floor_double(this.mc.thePlayer.posY)+", z: "+MathHelper.floor_double(this.mc.thePlayer.posZ), 2, 12, 16777215);
-			EaglerAdapter.glPopMatrix();
+			String client_name = "Aeon b1";
+			drawRect(2, 2, 120, 14, 0x50000000);
+			var8.drawStringWithShadow(client_name, 4, 4, 0xffffffff);
 		}
 
 		if (this.recordPlayingUpFor > 0) {

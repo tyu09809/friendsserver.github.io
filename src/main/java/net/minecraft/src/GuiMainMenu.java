@@ -76,7 +76,7 @@ public class GuiMainMenu extends GuiScreen {
 		 * RunnableTitleScreen(this), "1.6 Update Check Thread")).start(); }
 		 */
 
-		this.field_92025_p = EaglerAdapter._wisWebGL() ? ("eaglercraft javascript runtime") : ("eaglercraft desktop runtime");
+		this.field_92025_p = EaglerAdapter._wisWebGL() ? ("Aeon javascript runtime") : ("Aeon desktop runtime");
 		this.start = System.currentTimeMillis() + System.currentTimeMillis() % 10000l;
 		this.ackLines = new ArrayList();
 		
@@ -434,7 +434,7 @@ public class GuiMainMenu extends GuiScreen {
 		 * this.splashText, 0, -8, 16776960); EaglerAdapter.glPopMatrix();
 		 */
 
-		this.drawString(this.fontRenderer, "minecraft 1.5.2", 2, this.height - 20, 16777215);
+		this.drawString(this.fontRenderer, "Minecraft 1.5.2", 2, this.height - 20, 16777215);
 		this.drawString(this.fontRenderer, ConfigConstants.mainMenuString, 2, this.height - 10, 16777215);
 
 		String var10 = "copyright " + Calendar.getInstance().get(Calendar.YEAR) + " calder young";
